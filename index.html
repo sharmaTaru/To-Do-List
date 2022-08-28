@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+    <script src="https://kit.fontawesome.com/e31ad148fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    type="text/css"
+    href="index.css">
+</head>
+<body>
+  
+
+<div id="main">
+    <!-- input of ToDo -->
+    <div 
+    id="toDoForm" >
+
+        <h2>ToDo List</h2>
+        <form 
+        action="#" id="form">
+    
+        <input 
+        type="text"
+        name="task"
+        id="inputTask"
+        placeholder="Enter Your ToDo Task Here..."
+        onfocus="this.placeholder=''" 
+        onblur="this.placeholder='Enter Your ToDo Task Here...'"  
+        required/>
+
+        <button id="addButton">
+            <i class="fa-solid fa-plus "></i>
+        </button>
+
+    
+    </form>
+    </div>
+<hr>
+    <!-- Output of ToDo -->
+    <div class="outputTodo">
+
+        <h2> Tasks </h2>
+
+        <div class="tasks"></div>
+
+    </div>
+
+</div>
+<script src="index.js"></script>
+</html>

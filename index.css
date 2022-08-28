@@ -1,0 +1,127 @@
+
+/* styling of body and main */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background: url('./image/uwp1998632.jpeg');
+    background-size: cover;
+    color: white;
+
+}
+#main {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: max-content;
+    width: 500px;
+    overflow: hidden;
+ }
+/* ************************* */
+
+/* styling of To Do Form */
+#toDoForm{
+    text-align: center;
+}
+#inputTask,#addButton{
+    border: 1px solid black;
+    
+}
+#inputTask{
+    height: 50px;
+    width: 200px;
+    border-radius:25px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border-color: black;
+    background-color: transparent;
+}
+#inputTask:hover{
+    background-color: white;
+    color: black;
+
+}
+#addButton{
+    height: 50px;
+    width: 40px;
+    border-radius: 19px;
+    background-color:transparent;
+}
+
+#addButton:hover{
+    background-color: white;
+}
+.fa-plus{
+    color: black;
+    font-size: 20px;
+    padding: 0;
+}
+hr{
+    height: 3px;
+    background-color: black;
+    border:none;
+    margin-top: 50px;
+}
+/* ********************************* */
+
+
+/* styling of output Tasks */
+.lineThrough{
+    text-decoration: line-through;
+}
+.outputTodo > h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.tasks{
+    margin: 0;
+    height: 300px;
+    overflow: scroll;
+}
+.task{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    font-size:20px;
+    align-items: center;
+}
+.task > .circle,.check{
+    order:-1;
+}
+.task > button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: inherit;
+}
+.trash-can{
+    margin-left: auto;
+}
+.trash-can::after {
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 400;
+	content: "\f2ed";
+    font-size: 20px;
+}
+.trash-can:hover{
+    color: white\\;
+}
+.circle::before {
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 400;
+	content: "\f111";
+    font-size: 20px;
+
+}
+.circle:hover{
+    color:white;
+}
+.check::before {
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 400;
+    font-size: 20px;
+	content: "\f058";
+}
+/* ****************************** */
